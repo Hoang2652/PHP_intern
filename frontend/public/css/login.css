@@ -1,0 +1,131 @@
+/*----------------------- Login -------------------------------------*/
+.login{
+    margin: 40px;
+}
+.login__save {
+    text-align: left;
+    margin-left: 1.3rem;
+    margin-top: 0.5rem;
+}
+
+.login__content,
+.register__content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.login__form {
+    height: 368px;
+    width: 348px;
+}
+
+.form__register {
+    left: -3rem;
+}
+
+.form__login {
+    left: -10rem;
+}
+
+.form__login,
+.form__register {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(35, 0, 77, 0.2);
+}
+
+.login__box {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 0.5rem;
+    padding: 1.125rem 1rem;
+    background-color: #fff;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+.login__icon {
+    font-size: 1.5rem;
+    color: blue;
+}
+
+.login__input {
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 0.985rem;
+}
+
+.login__input::placeholder {
+    font-size: 0.985rem;
+    color: #a49eac;
+}
+
+.login__actions{
+    margin-top: 10px;
+}
+
+.login__dash {
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
+}
+
+.warning {
+    font-size: 80%;
+    color: red;
+}
+
+/*----------------------- Register -------------------------------------*/
+.register__form {
+    width: 400px;
+    margin: 20px;
+}
+
+.register__box {
+    height: 40px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    margin-top: 1.75rem;
+    border-radius: 0.5rem;
+}
+
+.register__row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+    margin-top: 0.5rem;
+}
+
+.register__label {
+    float: left;
+    margin-left: 0.1rem;
+}
+
+.canhbao {
+    font-size: 10px;
+    color: red;
+    float: left;
+    margin-top: 0;
+    width: 300px;
+    padding-right: 0rem;
+    text-align: left;
+    padding-top: 2px;
+    padding-left: 5px;
+}
