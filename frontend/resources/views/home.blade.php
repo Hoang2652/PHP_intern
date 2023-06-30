@@ -2,9 +2,9 @@
 @section('home')
     <div>
         <div class="title">
-            <h1>
+            <h2>
                 A joke a day keeps the doctor away
-            </h1>   
+            </h2>   
             <p>
                 If you joke wrong away, you teach have to pay. (Serious)
             </p>
@@ -23,11 +23,11 @@
                 $username = Session::get('username');
             @endphp
             @if(isset($username))
-                <button type="button" class="btn btn-primary actions-funny actions-joke">This is Funny!</button>
-                <button type="button" class="btn btn-success actions-notfunny actions-joke">This is not funny.</button>
+                <button type="button" class="actions-funny actions-joke vote-funny">This is Funny!</button>
+                <button type="button" class="actions-notfunny actions-joke vote-notfunny">This is not funny.</button>
             @else
-                <button type="button" class="btn btn-primary actions-funny" id="liveToastBtn">This is Funny!</button>
-                <button type="button" class="btn btn-success actions-notfunny" id="liveToastBtn">This is not funny.</button>
+                <button type="button" class="actions-funny actions-joke" id="liveToastBtn">This is Funny!</button>
+                <button type="button" class="actions-notfunny actions-joke" id="liveToastBtn">This is not funny.</button>
             @endif
             <div class="toast-container position-fixed top-0 end-0 p-3">
                 <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -44,7 +44,7 @@
     </div>
     <script>
         $(document).ready(function() {
-            $('.actions-funny').on('click', function(){     
+            $('.vote-funny').on('click', function(){     
                 $.ajax({
                     url: '/actions-funny',
                     method: 'GET', 
@@ -61,7 +61,7 @@
                 });
             });
 
-            $('.actions-notfunny').on('click', function(){     
+            $('.vote-notfunny').on('click', function(){     
                 $.ajax({
                     url: '/actions-notfunny',
                     method: 'GET', 
