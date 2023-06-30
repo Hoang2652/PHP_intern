@@ -17,11 +17,9 @@
         <div class="header">
             <div class="header-wrap">
                 <div class="header-logo">
-                    <nav class="navbar bg-body-tertiary">
-                        <div class="container-fluid">
-                        <a class="navbar-brand mb-0 h1" href="{{URL::to('/')}}">Logo</a>
-                        </div>
-                    </nav>
+                    <a class="navbar-brand mb-0 h1" href="{{URL::to('/')}}">
+                        <img src="{{asset('img/logo.JPG')}}" alt="logo"/>
+                    </a>
                 </div>
                 <div class="header-login">
                     @php
@@ -30,7 +28,7 @@
                     @endphp
                     @if(isset($username))
                         <div class="header-name">
-                            <p>{{ $username }}</p>
+                            <p>Handicrafted by</p>
                             <p>{{ $fullname }}</p>
                         </div>
                         <div class="header-avatar">
